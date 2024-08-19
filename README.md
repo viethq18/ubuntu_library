@@ -60,3 +60,13 @@ Copy my .zshrc into .zshrc
 ```sh
 https://docs.docker.com/engine/install/ubuntu/
 ```
+
+## Create new user
+```sh
+sudo -i
+adduser viethq5
+usermod -aG sudo viethq5
+su - viethq5
+sudo ls
+sudo usermod -aG docker $USER
+
