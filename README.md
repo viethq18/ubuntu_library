@@ -1,5 +1,11 @@
 # ubuntu_library
 
+## Install huggingface download model
+```sh
+pip install "huggingface_hub[hf_transfer]"
+HF_HUB_ENABLE_HF_TRANSFER=1 huggingface-cli download deepseek-ai/deepseek-vl2-small --local-dir ./deepseek-vl2-small
+```
+
 ## Install git lfs
 ```sh
 curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash
